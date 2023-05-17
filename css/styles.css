@@ -269,6 +269,87 @@ body {
   align-self: flex-end;
 }
 
+
+/* INDEX SERVICES */
+
+.index-services {
+  padding: 120px 0;
+
+}
+
+/* .index-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.index-services-heading {
+  text-align: center;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 56px;
+  color: #000;
+}
+
+
+.index-services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 864px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.index-services-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+
+.index-service {
+  display: flex;
+  align-items: center;
+}
+
+.index-service-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  border-radius: 24px;
+  margin-right: 64px;
+}
+
+.index-service-content {
+  width: 600px;
+}
+
+.index-service-title {
+  font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.index-service-description {
+  margin: 0;
+}
+
+.index-services-actions {
+  display: flex;
+  justify-content: center;
+
+}
+
+
 /* FOOTER SECTION STYLES */
 
 
