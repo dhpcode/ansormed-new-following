@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #444;
-  background-color: #fff;
-}
 
 /* fonts */
 
@@ -78,14 +69,26 @@ body {
   font-display: swap;
 }
 
-
-
-
-
 /* fonts
 - Open sans 400, 600, 700
 - Open sans Condensed 700
 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #444;
+  background-color: #fff;
+}
+
+*:focus {
+  outline: 2px dotted #DE2E54;
+  outline-offset: 2px;
+}
+
 
 
 /* CONTAINER */
@@ -97,4 +100,105 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+
+/* SITE HEADER */
+
+
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.site--header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SITE LOGO */
+.site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
+.site-logo:hover {
+  color: #DE2E54;
+}
+.site-logo:active {
+  opacity: 0.6;
+}
+
+
+
+.site-logo-img {
+  margin-right: 16px;
+}
+.site-logo-text {
+
+}
+
+/* SITENAV */
+.sitenav {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+
+.sitenav-link {
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+
+.sitenav-link:hover {
+  color: #DE2E54;
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+/* MAIN LINK */
+.main-link {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 2px solid #DE2E54;
+  background-color: #DE2E54;
+  color: #fff;
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.main-link:hover {
+  background-color: #fff;
+  color: #DE2E54;
+}
+
+.main-link:active {
+  background-color: #DE2E54;
+  color: #fff;
+  opacity: 0.6;
 }
