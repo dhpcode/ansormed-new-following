@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* fonts */
 
 @font-face {
@@ -220,6 +222,19 @@ body {
   opacity: 0.6;
 }
 
+/* related to cta */
+.main-link-outline {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.main-link-outline:hover {
+  background-color: #DE2E54;
+  border-color: transparent;
+  color: #fff;
+}
+
+
 
 /* HERO SECTION STYLES */
 
@@ -346,8 +361,39 @@ body {
 .index-services-actions {
   display: flex;
   justify-content: center;
+}
+
+
+/* CTA section styles */
+
+.cta {
+  padding: 64px 0;
+  background-color: #0eb4c1;
+  color: #fff;
+}
+
+.cta-heading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-links-item:not(:last-child) {
+  margin-right: 40px;
 
 }
+
+
+
 
 
 /* FOOTER SECTION STYLES */
