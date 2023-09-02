@@ -112,6 +112,8 @@ body {
 .site-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .site--header-container {
@@ -234,6 +236,11 @@ body {
   background-color: #DE2E54;
   border-color: transparent;
   color: #fff;
+}
+
+
+.site-header__menu-toggle {
+  display: none;
 }
 
 
@@ -421,6 +428,53 @@ body {
 
 /* MEDIA QUERIES */
 
+/* 1100 */
+
+@media screen and (max-width: 1100px) {
+
+  .site-header__main-link {
+    margin-right: 24px;
+  }
+
+  .site-header__site-logo {
+    margin-right: auto;
+  }
+  .site-header__sitenav {
+    display: none;
+  }
+
+  .site-header--open .site-header__sitenav {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+  }
+
+  .site-header__sitenav .sitenav-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .site-header__sitenav .sitenav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 12px;  
+  }
+  
+  .site-header__menu-toggle {
+    display: block;
+    padding: 10px;
+    border: 1px solid #DE2E54;
+    border-radius: 2px;
+    background-color: #fff;
+    font-family: 'Open Sans Condensed';
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+}
+
 /* 1000 */
 
 @media screen and (max-width: 1000px) {
@@ -448,6 +502,35 @@ body {
     margin-right: 32px;
   }
 }
+
+
+/* 900 */
+
+@media screen and (max-width: 900px) {
+
+  .site-header__main-link {
+    display: none;
+  }
+
+  .site--footer-container {
+    flex-direction: column;
+  }
+
+  .site-footer .site-logo {
+    margin-bottom: 24px;
+  }
+
+  .sitenav-site-footer .sitenav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .site-footer .sitenav-item {
+    margin: 8px 24px;
+  }
+}
+
 
 /* 800 */
 
@@ -509,6 +592,13 @@ body {
 /* 550 */
 @media screen and (max-width: 550px) {
 
+  .site--header-container {
+    padding: 0 22px;
+  }
+
+  .site-header--open .site-header__sitenav {
+    padding: 22px;
+  }
 
   .hero-text {
     font-size: 14px;
@@ -526,7 +616,7 @@ body {
   .index-services-item:not(:last-child) {
     margin-bottom: 40px;
   }
-  
+
   .index-service-img {
     width: 60%;
     height: auto;
@@ -537,10 +627,12 @@ body {
   .index-service-content {
     width: 100%;
   }
+
   .index-service-title {
     text-align: center;
     margin-bottom: 16px;
   }
+
   .index-service-description {
     text-align: justify;
   }

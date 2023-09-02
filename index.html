@@ -18,15 +18,15 @@
 
 <body>
   <!-- SITE HEADER -->
-  <header class="site-header" style="display: none;">
+  <header class="site-header">
     <div class="site--header-container container">
-      <a class="site-logo" href="index.html">
+      <a class="site-logo site-header__site-logo" href="index.html">
         <img class="site-logo-img" src="images/logo-icon.jpg" alt="Akademnashr Logosi" width="50" height="50"
           srcset="images/logo-icon.jpg 1x, images/logo-icon@2x.jpg 2x">
         <span class="site-logo-text">Ansormed</span>
       </a>
 
-      <nav class="sitenav">
+      <nav class="sitenav site-header__sitenav">
         <ul class="sitenav-list">
           <li class="sitenav-item">
             <a class="sitenav-link" href="#">Xizmatlar</a>
@@ -46,7 +46,9 @@
         </ul>
       </nav>
 
-      <a class="main-link" href="#index-cta">Qabulga yozilish</a>
+      <a class="site-header__main-link main-link" href="#index-cta">Qabulga yozilish</a>
+
+      <button class="site-header__menu-toggle" type="button">Menyu</button>
     </div>
   </header>
 
@@ -157,7 +159,7 @@
 
 
   <!-- SITE FOOTER -->
-  <footer class="site-footer" style="display: none;">
+  <footer class="site-footer">
     <div class="site--footer-container container">
       <a class="site-logo" href="index.html">
         <img class="site-logo-img" src="images/logo-icon.jpg" alt="Akademnashr Logosi" width="50" height="50"
@@ -187,6 +189,8 @@
 
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
