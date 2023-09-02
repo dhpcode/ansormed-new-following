@@ -388,7 +388,9 @@ body {
 
 .cta-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .cta-links-item:not(:last-child) {
@@ -498,6 +500,10 @@ body {
   .index-service-title {
     font-size: 18px;
   }
+
+  .cta-heading {
+    font-size: 24px;
+  }
 }
 
 /* 550 */
@@ -537,5 +543,18 @@ body {
   }
   .index-service-description {
     text-align: justify;
+  }
+
+  .cta {
+    padding: 36px 0;
+  }
+
+  .cta-links {
+    flex-direction: column;
+  }
+
+  .cta-links-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 }
